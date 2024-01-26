@@ -1,6 +1,6 @@
 # Dual Co-Matching Network for multiple choice questions
 
-This repo contains a re-implementation of Dual Co-Matching Network for multiple choice questions introduced in [this](https://arxiv.org/pdf/1908.11511.pdf) paper, as the final project for CS1470 Deep Learning. The model uses `BERT-Small` with 4 layers of encoders and a hidden size of 256, and achieves accuracy around 0.6138. The model definition is stored in `model.py`, and `main.py` is the script for running the training task. The current model is trained with a subset of the high school questions in the RACE dataset.
+As the final project for CS1470 Deep Learning, we re-implemented Dual Co-Matching Network for multiple choice questions introduced in [this](https://arxiv.org/pdf/1908.11511.pdf) paper. The model uses `BERT-Small` with 4 layers of encoders and a hidden size of 256, and achieves accuracy around 0.6138. The model definition is stored in `model.py`, and `main.py` is the script for running the training task. The current model is trained with a subset of the high school questions in the RACE dataset.
 
 # Introduction:
 
