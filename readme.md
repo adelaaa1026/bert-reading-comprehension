@@ -50,7 +50,8 @@ Even though BERT is on the smaller side for modern language models (110M params 
 The paper we implement provides only a high-level overview of the structure of the dual do-matching network (DCMN), and a lot of details are missing. Many dimensions are unspecified: to start with, should we concatenate four options together using separators or should we pass them in separately? We ended up trying both, and the same goes for some other implementation details.
 
 In addition, one thing that must be brought up is the disastrous situation of compatibility issues in tensorflow. We avoided using any non-tensorflow third-party packages and resources, but even then we frequently ran into incompatibility issues when loading models and many of these are not documented or not consistent with official documentation - our final model runs with an error where the BERT pre-trained by Google (the most authoritative developer!) has a feature that will be deprecated. The group feels a sense of relief when the project & course is done, and they know that they can start using Pytorch.
-Results:
+
+# Results:
 
 As the RACE dataset is exclusively made of multiple choice problems that has 4 choices, an at-chance accuracy would be around 25%. We were happy to see that most model architectures we experimented with can easily train to accuracy above 30%, demonstrating that the model is at least capable of capturing some relationships.
 
